@@ -185,11 +185,7 @@ class MainActivity : AppCompatActivity() {
                                     //jogada cp 1
                                     val resultado: Int = geradorRandomico.nextInt(1..3)
                                     activityMainBinding.jogadaComputador1Iv.setImageResource(
-                                        resources.getIdentifier(
-                                            "icon_$resultado",
-                                            "drawable",
-                                            packageName
-                                        )
+                                        resources.getIdentifier("icon_$resultado", "drawable", packageName)
                                     )
                                     //cp2 desativado
                                     activityMainBinding.jogadaComputador2Iv.setImageResource(
@@ -201,32 +197,20 @@ class MainActivity : AppCompatActivity() {
                                         2 -> {
                                             activityMainBinding.vencedorTv.text = "Empate"
                                             activityMainBinding.vencedorIv.setImageResource(
-                                                resources.getIdentifier(
-                                                    "riso",
-                                                    "drawable",
-                                                    packageName
-                                                )
+                                                resources.getIdentifier("riso", "drawable", packageName)
                                             )
                                         }
 
                                         1 -> {
                                             activityMainBinding.vencedorTv.text = "You Lose"
                                             activityMainBinding.vencedorIv.setImageResource(
-                                                resources.getIdentifier(
-                                                    "loser",
-                                                    "drawable",
-                                                    packageName
-                                                )
+                                                resources.getIdentifier("loser", "drawable", packageName)
                                             )
                                         }
                                         3 -> {
                                             activityMainBinding.vencedorTv.text = "You Win"
                                             activityMainBinding.vencedorIv.setImageResource(
-                                                resources.getIdentifier(
-                                                    "win",
-                                                    "drawable",
-                                                    packageName
-                                                )
+                                                resources.getIdentifier("win", "drawable", packageName)
                                             )
                                         }
 
@@ -245,11 +229,7 @@ class MainActivity : AppCompatActivity() {
 
                                     val resultado: Int = geradorRandomico.nextInt(1..3)
                                     activityMainBinding.jogadaComputador1Iv.setImageResource(
-                                        resources.getIdentifier(
-                                            "icon_$resultado",
-                                            "drawable",
-                                            packageName
-                                        )
+                                        resources.getIdentifier("icon_$resultado", "drawable", packageName)
                                     )
 
                                     activityMainBinding.jogadaComputador2Iv.setImageResource(
@@ -261,32 +241,20 @@ class MainActivity : AppCompatActivity() {
                                         1 -> {
                                             activityMainBinding.vencedorTv.text = "Empate"
                                             activityMainBinding.vencedorIv.setImageResource(
-                                                resources.getIdentifier(
-                                                    "riso",
-                                                    "drawable",
-                                                    packageName
-                                                )
+                                                resources.getIdentifier("riso", "drawable", packageName)
                                             )
                                         }
 
                                         3 -> {
                                             activityMainBinding.vencedorTv.text = "You Lose"
                                             activityMainBinding.vencedorIv.setImageResource(
-                                                resources.getIdentifier(
-                                                    "loser",
-                                                    "drawable",
-                                                    packageName
-                                                )
+                                                resources.getIdentifier("loser", "drawable", packageName)
                                             )
                                         }
                                         2 -> {
                                             activityMainBinding.vencedorTv.text = "You Win"
                                             activityMainBinding.vencedorIv.setImageResource(
-                                                resources.getIdentifier(
-                                                    "win",
-                                                    "drawable",
-                                                    packageName
-                                                )
+                                                resources.getIdentifier("win", "drawable", packageName)
                                             )
                                         }
 
@@ -305,11 +273,7 @@ class MainActivity : AppCompatActivity() {
 
                                     val resultado: Int = geradorRandomico.nextInt(1..3)
                                     activityMainBinding.jogadaComputador1Iv.setImageResource(
-                                        resources.getIdentifier(
-                                            "icon_$resultado",
-                                            "drawable",
-                                            packageName
-                                        )
+                                        resources.getIdentifier("icon_$resultado", "drawable", packageName)
                                     )
 
                                     activityMainBinding.jogadaComputador2Iv.setImageResource(
@@ -321,32 +285,20 @@ class MainActivity : AppCompatActivity() {
                                         3 -> {
                                             activityMainBinding.vencedorTv.text = "Empate"
                                             activityMainBinding.vencedorIv.setImageResource(
-                                                resources.getIdentifier(
-                                                    "riso",
-                                                    "drawable",
-                                                    packageName
-                                                )
+                                                resources.getIdentifier("riso", "drawable", packageName)
                                             )
                                         }
 
                                         2 -> {
                                             activityMainBinding.vencedorTv.text = "You Lose"
                                             activityMainBinding.vencedorIv.setImageResource(
-                                                resources.getIdentifier(
-                                                    "loser",
-                                                    "drawable",
-                                                    packageName
-                                                )
+                                                resources.getIdentifier("loser", "drawable", packageName)
                                             )
                                         }
                                         1 -> {
                                             activityMainBinding.vencedorTv.text = "You Win"
                                             activityMainBinding.vencedorIv.setImageResource(
-                                                resources.getIdentifier(
-                                                    "win",
-                                                    "drawable",
-                                                    packageName
-                                                )
+                                                resources.getIdentifier("win", "drawable", packageName)
                                             )
                                         }
 
@@ -379,7 +331,7 @@ class MainActivity : AppCompatActivity() {
                                     val resultado2: Int = geradorRandomico.nextInt(1..3)
                                     activityMainBinding.jogadaComputador2Iv.setImageResource(
                                         resources.getIdentifier(
-                                            "icon_$resultado",
+                                            "icon_$resultado2",
                                             "drawable",
                                             packageName
                                         )
@@ -387,18 +339,8 @@ class MainActivity : AppCompatActivity() {
 
 
                                     //vencedor
-                                    if (resultado == 2 && resultado2 == 2 ||
-                                        resultado == 1 && resultado2 == 3 ||
-                                        resultado == 3 && resultado2 == 1 ||
-                                        resultado == 1 && resultado2 == 1 ||
-                                        resultado == 2 && resultado2 == 3 ||
-                                        resultado == 3 && resultado2 == 2
-                                    ) {
-                                        activityMainBinding.vencedorTv.text = "Empate"
-                                        activityMainBinding.vencedorIv.setImageResource(
-                                            resources.getIdentifier("riso", "drawable", packageName)
-                                        )
-                                    } else if (resultado == 3 && resultado2 == 3) {
+
+                                    if (resultado == 3 && resultado2 == 3) {
                                         activityMainBinding.vencedorTv.text = "You Win"
                                         activityMainBinding.vencedorIv.setImageResource(
                                             resources.getIdentifier("win", "drawable", packageName)
@@ -425,13 +367,9 @@ class MainActivity : AppCompatActivity() {
                                         )
                                     } else {
 
-                                        activityMainBinding.vencedorTv.text = "Error"
+                                        activityMainBinding.vencedorTv.text = "Empate"
                                         activityMainBinding.vencedorIv.setImageResource(
-                                            resources.getIdentifier(
-                                                "vazio",
-                                                "drawable",
-                                                packageName
-                                            )
+                                            resources.getIdentifier("riso", "drawable", packageName)
                                         )
                                     }
 
@@ -458,7 +396,7 @@ class MainActivity : AppCompatActivity() {
                                     val resultado2: Int = geradorRandomico.nextInt(1..3)
                                     activityMainBinding.jogadaComputador2Iv.setImageResource(
                                         resources.getIdentifier(
-                                            "icon_$resultado",
+                                            "icon_$resultado2",
                                             "drawable",
                                             packageName
                                         )
@@ -466,18 +404,7 @@ class MainActivity : AppCompatActivity() {
 
 
                                     //vencedor
-                                    if (resultado == 1 && resultado2 == 1 ||
-                                        resultado == 1 && resultado2 == 2 ||
-                                        resultado == 2 && resultado2 == 1 ||
-                                        resultado == 3 && resultado2 == 2 ||
-                                        resultado == 2 && resultado2 == 3 ||
-                                        resultado == 3 && resultado2 == 3
-                                    ) {
-                                        activityMainBinding.vencedorTv.text = "Empate"
-                                        activityMainBinding.vencedorIv.setImageResource(
-                                            resources.getIdentifier("riso", "drawable", packageName)
-                                        )
-                                    } else if (resultado == 2 && resultado2 == 2) {
+                                    if (resultado == 2 && resultado2 == 2) {
                                         activityMainBinding.vencedorTv.text = "You Win"
                                         activityMainBinding.vencedorIv.setImageResource(
                                             resources.getIdentifier("win", "drawable", packageName)
@@ -504,97 +431,78 @@ class MainActivity : AppCompatActivity() {
                                         )
                                     } else {
 
-                                        activityMainBinding.vencedorTv.text = "Error"
+                                        activityMainBinding.vencedorTv.text = "Empate"
                                         activityMainBinding.vencedorIv.setImageResource(
-                                            resources.getIdentifier(
-                                                "vazio",
-                                                "drawable",
-                                                packageName
-                                            )
+                                            resources.getIdentifier("riso", "drawable", packageName)
                                         )
+
                                     }
 
                                 }
 
 
-                            }
+                                //usuario escolhe tesoura
+                                activityMainBinding.tesouraIv.setOnClickListener {
 
-                            //usuario escolhe tesoura
-                            activityMainBinding.tesouraIv.setOnClickListener {
-
-                                activityMainBinding.jogadaHumanoIv.setImageResource(
-                                    resources.getIdentifier("icon_3", "drawable", packageName)
-                                )
-
-                                //jogada cp 1
-                                val resultado: Int = geradorRandomico.nextInt(1..3)
-                                activityMainBinding.jogadaComputador1Iv.setImageResource(
-                                    resources.getIdentifier(
-                                        "icon_$resultado",
-                                        "drawable",
-                                        packageName
+                                    activityMainBinding.jogadaHumanoIv.setImageResource(
+                                        resources.getIdentifier("icon_3", "drawable", packageName)
                                     )
-                                )
-                                //jogada cp2
-                                val resultado2: Int = geradorRandomico.nextInt(1..3)
-                                activityMainBinding.jogadaComputador2Iv.setImageResource(
-                                    resources.getIdentifier(
-                                        "icon_$resultado",
-                                        "drawable",
-                                        packageName
-                                    )
-                                )
 
-
-                                //vencedor
-                                if (resultado == 3 && resultado2 == 3 ||
-                                    resultado == 2 && resultado2 == 1 ||
-                                    resultado == 1 && resultado2 == 2 ||
-                                    resultado == 3 && resultado2 == 1 ||
-                                    resultado == 1 && resultado2 == 3 ||
-                                    resultado == 2 && resultado2 == 2
-                                ) {
-                                    activityMainBinding.vencedorTv.text = "Empate"
-                                    activityMainBinding.vencedorIv.setImageResource(
-                                        resources.getIdentifier("riso", "drawable", packageName)
-                                    )
-                                } else if (resultado == 1 && resultado2 == 1) {
-                                    activityMainBinding.vencedorTv.text = "You Win"
-                                    activityMainBinding.vencedorIv.setImageResource(
-                                        resources.getIdentifier("win", "drawable", packageName)
-                                    )
-                                } else if (resultado == 3 && resultado2 == 1) {
-
-                                    activityMainBinding.vencedorTv.text = "You Lose - Sys2 Win"
-                                    activityMainBinding.vencedorIv.setImageResource(
+                                    //jogada cp 1
+                                    val resultado: Int = geradorRandomico.nextInt(1..3)
+                                    activityMainBinding.jogadaComputador1Iv.setImageResource(
                                         resources.getIdentifier(
-                                            "loser",
+                                            "icon_$resultado",
                                             "drawable",
                                             packageName
                                         )
                                     )
-                                } else if (resultado == 3 && resultado2 == 2) {
-
-                                    activityMainBinding.vencedorTv.text = "You Lose - Sys1 Win"
-                                    activityMainBinding.vencedorIv.setImageResource(
+                                    //jogada cp2
+                                    val resultado2: Int = geradorRandomico.nextInt(1..3)
+                                    activityMainBinding.jogadaComputador2Iv.setImageResource(
                                         resources.getIdentifier(
-                                            "loser",
+                                            "icon_$resultado2",
                                             "drawable",
                                             packageName
                                         )
                                     )
-                                } else {
 
-                                    activityMainBinding.vencedorTv.text = "Error"
-                                    activityMainBinding.vencedorIv.setImageResource(
-                                        resources.getIdentifier(
-                                            "vazio",
-                                            "drawable",
-                                            packageName
+
+                                    //vencedor
+                                    if (resultado == 1 && resultado2 == 1) {
+                                        activityMainBinding.vencedorTv.text = "You Win"
+                                        activityMainBinding.vencedorIv.setImageResource(
+                                            resources.getIdentifier("win", "drawable", packageName)
                                         )
-                                    )
+                                    } else if (resultado == 3 && resultado2 == 2) {
+
+                                        activityMainBinding.vencedorTv.text = "You Lose - Sys2 Win"
+                                        activityMainBinding.vencedorIv.setImageResource(
+                                            resources.getIdentifier(
+                                                "loser",
+                                                "drawable",
+                                                packageName
+                                            )
+                                        )
+                                    } else if (resultado == 2 && resultado2 == 3) {
+
+                                        activityMainBinding.vencedorTv.text = "You Lose - Sys1 Win"
+                                        activityMainBinding.vencedorIv.setImageResource(
+                                            resources.getIdentifier(
+                                                "loser",
+                                                "drawable",
+                                                packageName
+                                            )
+                                        )
+                                    } else {
+
+                                        activityMainBinding.vencedorTv.text = "Empate"
+                                        activityMainBinding.vencedorIv.setImageResource(
+                                            resources.getIdentifier("riso", "drawable", packageName)
+                                        )
+                                    }
+
                                 }
-
                             }
 
 
