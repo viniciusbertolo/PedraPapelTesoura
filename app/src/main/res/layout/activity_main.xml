@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/frasePrincipalTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="Welcome to JokenPô Game!"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fraseSecundariaTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:text="Choose rock, paper or scissors!"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frasePrincipalTv" />
+
+    <ImageView
+        android:id="@+id/pedraIv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/papelIv"
+        app:layout_constraintTop_toBottomOf="@+id/fraseSecundariaTv"
+        app:srcCompat="@drawable/icon_2" />
+
+    <ImageView
+        android:id="@+id/papelIv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toEndOf="@+id/pedraIv"
+        app:layout_constraintEnd_toStartOf="@+id/tesouraIv"
+        app:layout_constraintTop_toBottomOf="@+id/fraseSecundariaTv"
+        app:srcCompat="@drawable/icon_1" />
+
+    <ImageView
+        android:id="@+id/tesouraIv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toEndOf="@+id/papelIv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fraseSecundariaTv"
+        app:srcCompat="@drawable/icon_3" />
+
+    <TextView
+        android:id="@+id/resultadoFraseTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:text="Results from the game:"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tesouraIv" />
+
+
+
+    <ImageView
+        android:id="@+id/jogadaHumanoIv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/jogadaComputador1Iv"
+        app:layout_constraintTop_toBottomOf="@+id/resultadoFraseTv"
+        app:srcCompat="@drawable/vazio" />
+
+    <TextView
+        android:id="@+id/textoYouTv"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5sp"
+        android:text="You"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textoCp1Tv"
+        app:layout_constraintTop_toBottomOf="@+id/jogadaHumanoIv" />
+
+
+    <ImageView
+        android:id="@+id/jogadaComputador1Iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toEndOf="@+id/jogadaHumanoIv"
+        app:layout_constraintEnd_toStartOf="@+id/jogadaComputador2Iv"
+        app:layout_constraintTop_toBottomOf="@+id/resultadoFraseTv"
+        app:srcCompat="@drawable/vazio" />
+
+    <TextView
+        android:id="@+id/textoCp1Tv"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5sp"
+        android:text="System 1"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textoYouTv"
+        app:layout_constraintEnd_toStartOf="@+id/textoCp2Tv"
+        app:layout_constraintTop_toBottomOf="@+id/jogadaComputador1Iv" />
+
+    <ImageView
+        android:id="@+id/jogadaComputador2Iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toEndOf="@+id/jogadaComputador1Iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultadoFraseTv"
+        app:srcCompat="@drawable/vazio" />
+
+    <TextView
+        android:id="@+id/textoCp2Tv"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5sp"
+        android:text="System 2"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textoCp1Tv"
+        app:layout_constraintTop_toBottomOf="@+id/jogadaComputador2Iv" />
+
+    <ImageView
+        android:id="@+id/vencedorIv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoCp1Tv"
+        app:srcCompat="@drawable/vazio" />
+
+    <TextView
+        android:id="@+id/vencedorTv"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5sp"
+        android:text="Vencedor"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vencedorIv" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
